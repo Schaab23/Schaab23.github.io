@@ -1,23 +1,23 @@
 criaCartao(
     'Programação',
-    'O que faz a função len () em Python?',
-    'Retorna o número de itens em um objeto,como uma lista'
+    'O que é uma variável?',
+    ' Um espaço na memória para armazenar dados'
 )
 
 criaCartao(
     'História',
-    'Em que ano os Portuguses chegaram ao Brasil?'
+    'Em que ano descobriram o Brasil?',
     'Em 1500'
 )
 
 criaCartao(
     'Programação',
-    'O que é uma função?',
-    'Uma função é um bloco de código que executa alguma tarefa'
+    'O que é uma string?',
+    'Uma sequência de caracteres, como "Olá Mundo"'
 )
 
 criaCartao(
-    'Lingua espanhola',
-    'Como se diz oi em Espahol?',
-    'Oi em Espalhol é Holla'
+    'Lingua Espanhola',
+    'Como se diz oi em Espanhol?',
+    'Oi em ingles é Holla'
 )
