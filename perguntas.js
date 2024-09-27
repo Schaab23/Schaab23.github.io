@@ -1,10 +1,10 @@
-criaCartao1(
+criaCartao(
     'Programação',
     'O que é Python?',
     'O Python é uma linguagem de programação'
 )
 
-criaCartao2(
+criaCartao(
     'Geografia',
     'Qual a capital da França?',
     'A capital da França é Paris'
