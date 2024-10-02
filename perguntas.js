@@ -6,18 +6,43 @@ criaCartao(
 
 criaCartao(
     'Geografia',
-    'Qual a capital da França?',
-    'A capital da França é Paris'
+    'Qual a capital do Brasil?',
+    'A capital do Brasil é Brasília'
 )
 
 criaCartao(
     'Programação',
-    'O que é uma função?',
-    'Uma função é um bloco de código que executa alguma tarefa'
+    'Como fazer um comentario em Python?',
+    'Use o simbolo # antes do texto'
 )
 
 criaCartao(
-    'Lingua inglesa',
-    'Como se diz oi em Inglês?',
-    'Oi em ingles é HI (RAI)'
+    'Lingua Espanhola',
+    'Como se diz oi em Espanhol?',
+    'Oi em Espanhol se fala Holla'
+
+)
+
+criaCartao(
+    `Lingua Inglesa`,
+    `Como se diz cachorro em Inglês?`
+    `Cachorro em Inglês se diz Dog`
+)
+
+criaCartao(
+    `Robotica`
+    `O que é Robotica?`
+    `A ciência que estuda os robos,do desenho a montagem`
+)
+
+criaCartao(
+    `Arte`
+    `Quem pitou a Mona Lisa?`
+    `Leonardo da Vinci`
+)
+
+criaCartao(
+    `História`
+    `Quem escreveu "Dom Quixote?`
+    `Miguel de Cervantes`
 )
