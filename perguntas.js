@@ -24,40 +24,40 @@ criaCartao(
 )
 
 criaCartao(
-    `Lingua Inglesa`,
-    `Como se diz cachorro em Inglês?`
-    `Cachorro em Inglês se diz Dog`
+    'Lingua Inglesa',
+    'Como se diz cachorro em Inglês?',
+    'Cachorro em Inglês se diz Dog'
 )
 
 criaCartao(
-    `Robotica`
-    `O que é Robotica?`
-    `A ciência que estuda os robos,do desenho a montagem`
+    'Robotica',
+    'O que é Robotica?',
+    'A ciência que estuda os robos,do desenho a montagem'
 )
 
 criaCartao(
-    `Arte`
-    `Quem pitou a Mona Lisa?`
-    `Leonardo da Vinci`
+    'Arte',
+    'Quem pitou a Mona Lisa?',
+    'Leonardo da Vinci'
 )
 
 criaCartao(
-    'História'
-    `Quem escreveu Dom Quixote?`
-    `Miguel de Cervantes`
+    'História',
+    'Quem escreveu Dom Quixote?',
+    'Miguel de Cervantes'
 )
     
 criaCartao( 
-   'Esportes'
-    `Qual esporte é conhecido como esporte das multidões no Brasil?`
-    `É o futebol` 
+   'Esportes',
+    'Qual esporte é conhecido como esporte das multidões no Brasil?',
+    'É o futebol'
     )
     
 
 
 criaCartao(
-    'Televisão Brasileira'
-    `Qual apresentador é famoso por comandar o programa Caldeirão?`
-    `É o apresentador Luciano Huck`
+    'Televisão Brasileira',
+    'Qual apresentador é famoso por comandar o programa Caldeirão?',
+    'É o apresentador Luciano Huck'
 )
     
