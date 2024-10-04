@@ -20,7 +20,6 @@ criaCartao(
     'Lingua Espanhola',
     'Como se diz oi em Espanhol?',
     'Oi em Espanhol se fala Holla'
-
 )
 
 criaCartao(
@@ -53,8 +52,6 @@ criaCartao(
     'É o futebol'
     )
     
-
-
 criaCartao(
     'Televisão Brasileira',
     'Qual apresentador é famoso por comandar o programa Caldeirão?',
