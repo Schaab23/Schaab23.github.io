@@ -1,122 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
 :root {
-    --text-color: #070a0e;
-    --card-front-color: #80144a;
-    --card-back-color: #060335;
+    --laranja-claro: #311a09;/*modifica a cor da fonte*/
 }
 
 body {
-    background: url('img/bg-desktop.webp');
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-family: 'Montserrat';
 }
 
-#container {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 4rem;
-    gap: 3rem;
+header {
+    background-color: #ffffff;
 }
 
-.cartao {
-    margin: 1rem 1rem;
-    height: 20rem;
-    flex-grow: 1;
-    flex-basis: calc(33% - 6rem);
+
+section {
+    padding-bottom: 5rem;
 }
 
-.cartao__conteudo {
-    background-color: var(--card-front-color);
-    text-align: center;
-    /* background-color: aquamarine; */
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 300ms ease-in-out;
+
+.nav-link {
+    color: #2e31db;/*modifica as cores dos botões inicio, galeria e contato*/
+    font-weight: 600;
 }
 
-.cartao__conteudo h3 {
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
-    text-align: left;
-    padding: 0.5rem;
+.inicio-fundo {
+    /* aula 3 */
+    background-image: url('img/240_F_622404841_FJ34lNKx4J4LBknp1Ni4DEhYl6ro4K46.jpg');/*insere a imagem na introdução ao bem vindos*/
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+/* posicionamento para a imagem à direita */
+.img-inicio {
     position: absolute;
-    margin: 0.6rem;
-    border-radius: 0.6rem;
-    font-size: 1vw;
-    backface-visibility: hidden;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
 }
 
-.cartao__conteudo p {
-    margin-top: 1rem;
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    /* Convertido para em aumenta o tamanho da fonte por tabela*/
+    height: 3em;
+    /* Convertido para em */
+    align-content: center;
+
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat,/*insere a flor a direita superior da galeria*/
+        url('img/flor-esquerda.png') bottom left no-repeat;/*insere a flor a esquerda inferior da galeria*/
+    background-size: 180px 180px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    /* Garante que o conteúdo fica acima das imagens do background */
+}
+
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--laranja-claro);
+}
+
+#galeria {
+    background-color: #448163; /*modifica o fundo da galeria*/
+
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/suricato.jpg'); /*modifica o fundo do formulario entre em contato*/
+    background-size: cover;
+    padding: 4rem 0;
+    /* Espaçamento interno para a seção de contato */
+
+}
+
+.formulario {
+    background-color: #9c5d5d;/*modifica o plano de fundo do formulário*/
     padding: 2rem;
-    margin-top: 4rem;
-    font-size: 1.4vw;
+    /* Espaçamento interno dentro do formulário */
+    border-radius: 10px;
+    /* Borda arredondada para o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar o formulário */
+    font-weight: bold;
 }
 
-.cartao__conteudo__pergunta p {
-    color: var(--text-color);
-    font-weight: 500;
+.formulario button {
+    background-color: #267c1e; /*modifica o botão enviar msg*/
+    border: none;
+    font-weight: bold;
 }
 
-.cartao__conteudo__resposta p {
-    color: var(--card-back-color);
-    font-weight: 700;
-}
-
-.cartao.active .cartao__conteudo {
-    transform: rotateY(180deg);
-}
-
-.cartao__conteudo__pergunta,
-.cartao__conteudo__resposta {
-    backface-visibility: hidden;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.cartao__conteudo__resposta {
-    transform: rotateY(180deg);
-    background-color: rgba(46, 2, 20, 0.2);
-    border: 4px solid var(--card-back-color);
-}
-
-footer {
-    background-color: black;
-    color: rgb(21, 16, 95);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 2rem;
-}
-
-footer p {
-    text-align: center;
-    font-size: 0.6rem;
-    margin-top: 0.5rem;
-}
-
-@media (max-width: 560px) {
-    
-    body {
-        background: url('img/bg-mobile.webp'), no-repeat cover;
-    }
-
-    .cartao {
-        flex: 1 0 calc(100% - 1rem)
-    }
-
-    .cartao__conteudo h3 {
-        font-size: 3vw;
-    }
-
-    .cartao__conteudo p {
-        font-size: 3.8vw;
-    }
-
-     .rosa.jpg 
-     {
-        width: 100%;
-        height: 10000rem;
-     }
+/* chama classe do bootstrap para modificar a cor */
+.form-control {
+    background-color: #f3e6e6;/* modifica a seção entre em contato*/
 }
